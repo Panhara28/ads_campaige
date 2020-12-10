@@ -184,6 +184,10 @@ $borderColor: rgb(61, 155, 141);
   width: 100%;
   padding: 10px 40px 20px 40px;
   background-color: $backgroundColor;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 20px 20px 20px;
+  }
 }
 
 .chart {

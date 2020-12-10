@@ -8,6 +8,7 @@ import {
   Button,
   Row,
   Col,
+  Table,
 } from "react-bootstrap";
 
 export const Overview: React.FC<any> = (): any => {
@@ -106,64 +107,66 @@ export const Overview: React.FC<any> = (): any => {
       </div>
 
       <div className={styled.chartContainer}>
-        <div className={styled.chart}>
-          
-        </div>
+        <div className={styled.chart}></div>
       </div>
 
       <div className={styled.dataSetsContainer}>
         <div className={styled.dataSetsLeft}>
-          <div className={styled.dataTable}>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataTitle}>Browers</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataTitle}>Clicks</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Firefox</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>823</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Other</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>162</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Chrome</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>22</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Internet Explorer</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>12</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Safari</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>12</p>
-              </Col>
-            </Row>
-          </div>
-         </div>
+          <Table className={styled.dataTable}>
+            <thead className={styled.dataItem}>
+              <tr>
+                <th>
+                  <p className={styled.dataTitle}>Browers</p>
+                </th>
+                <th>
+                  <p className={styled.dataTitle}>Clicks</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className={styled.dataItem}>
+                <td>
+                  <p className={styled.dataText}>Firefox</p>
+                </td>
+                <td xs={4}>
+                  <p className={styled.dataText}>823</p>
+                </td>
+              </tr>
+              <tr className={styled.dataItem}>
+                <td>
+                  <p className={styled.dataText}>Other</p>
+                </td>
+                <td>
+                  <p className={styled.dataText}>162</p>
+                </td>
+              </tr>
+              <tr className={styled.dataItem}>
+                <td>
+                  <p className={styled.dataText}>Chrome</p>
+                </td>
+                <td>
+                  <p className={styled.dataText}>22</p>
+                </td>
+              </tr>
+              <tr className={styled.dataItem}>
+                <td>
+                  <p className={styled.dataText}>Internet Explorer</p>
+                </td>
+                <td>
+                  <p className={styled.dataText}>12</p>
+                </td>
+              </tr>
+              <tr className={styled.dataItem}>
+                <td>
+                  <p className={styled.dataText}>Safari</p>
+                </td>
+                <td>
+                  <p className={styled.dataText}>12</p>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </div>
       </div>
     </div>
   );
