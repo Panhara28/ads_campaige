@@ -6,8 +6,6 @@ import {
   FormLabel,
   FormControl,
   Button,
-  Row,
-  Col,
   Table,
 } from "react-bootstrap";
 
