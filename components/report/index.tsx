@@ -128,7 +128,7 @@ export const Overview: React.FC<any> = (): any => {
                 <td>
                   <p className={styled.dataText}>Firefox</p>
                 </td>
-                <td xs={4}>
+                <td>
                   <p className={styled.dataText}>823</p>
                 </td>
               </tr>
