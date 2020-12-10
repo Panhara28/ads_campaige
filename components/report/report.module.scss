@@ -206,6 +206,7 @@ $borderColor: rgb(61, 155, 141);
 
   @media screen and (max-width: 768px) {
     justify-content: center;
+    padding: 0px 0px 20px 0px;
   }
 }
 
@@ -218,7 +219,8 @@ $borderColor: rgb(61, 155, 141);
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    min-width: 300px;
+    width: 100%;
+    padding: 0px 10px 10px 10px;
   }
 }
 
@@ -231,7 +233,8 @@ $borderColor: rgb(61, 155, 141);
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    min-width: 300px;
+    width: 100%;
+    padding: 0px 10px 10px 10px;
   }
 }
 
