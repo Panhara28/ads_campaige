@@ -106,7 +106,9 @@ export const Overview: React.FC<any> = (): any => {
       </div>
 
       <div className={styled.chartContainer}>
-        <div className={styled.chart}></div>
+        <div className={styled.chart}>
+          
+        </div>
       </div>
 
       <div className={styled.dataSetsContainer}>
@@ -161,90 +163,7 @@ export const Overview: React.FC<any> = (): any => {
               </Col>
             </Row>
           </div>
-
-          <div className={styled.dataTable}>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataTitle}>Refferers</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataTitle}>Clicks</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Direct</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>977</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>www.freshnewsasia.com</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>25</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>freshnewsasia.com</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>19</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>image.freshnewsasia.com:81</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>10</p>
-              </Col>
-            </Row>
-          </div>
-        </div>
-
-        <div className={styled.dataSetsRight}>
-          <div className={styled.dataTable}>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataTitle}>Platforms</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataTitle}>Clicks</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Desktop</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>1022</p>
-              </Col>
-            </Row>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataText}>Mobile</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataText}>9</p>
-              </Col>
-            </Row>
-          </div>
-
-          <div className={styled.dataTable}>
-            <Row className={styled.dataItem}>
-              <Col xs={8}>
-                <p className={styled.dataTitle}>Platform OS</p>
-              </Col>
-              <Col xs={4}>
-                <p className={styled.dataTitle}>Clicks</p>
-              </Col>
-            </Row>
-          </div>
-        </div>
+         </div>
       </div>
     </div>
   );
