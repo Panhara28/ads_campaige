@@ -1,0 +1,270 @@
+$subTitleColor: #737679;
+$secondary: rgb(84, 85, 90);
+
+$backgroundColor: rgb(236, 239, 244);
+$cardBgColor: rgb(255, 255, 255);
+$borderColor: rgb(61, 155, 141);
+
+.formWorkLabel {
+  font-size: 13px;
+  margin: 0px;
+  color: $secondary;
+  min-width: 30%;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.formWorkSelect {
+  height: 30px;
+  width: 100% !important;
+  border: 1px solid $subTitleColor;
+  border-radius: 0px;
+  font-size: 13px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+
+  &:focus {
+    background-color: transparent;
+    border-color: $subTitleColor;
+    box-shadow: none;
+  }
+}
+
+// Overview Form
+.reportFormContainer {
+  width: 100%;
+  min-height: 200px;
+  background-color: $backgroundColor;
+  padding: 10px 20px 20px 20px;
+
+  h3 {
+    margin: 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 5px 20px 5px;
+  }
+}
+
+.textTitle {
+  font-size: 22px;
+  color: $secondary;
+
+  span {
+    font-size: 16px;
+    color: $subTitleColor;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+}
+
+.reportForm {
+  display: flex;
+  flex-direction: column;
+  min-height: 167px;
+  max-width: 100%;
+  padding: 20px 30px;
+  margin: 20px 20px 0px 20px;
+  background-color: $cardBgColor;
+  border-top: 3px solid $borderColor;
+
+  box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.035);
+
+  @media screen and (max-width: 768px) {
+    margin: 15px 4px 0px 4px;
+  }
+}
+
+.reportFormUpper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div {
+    margin: 0px 15px 0px 0px;
+  }
+}
+
+.ControlSelect1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: auto;
+}
+
+.ControlSelect2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: auto;
+}
+
+.reportFormLower {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  div {
+    margin: 0px 15px 0px 0px;
+  }
+}
+
+.ControlDate1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+}
+
+.ControlDate2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+}
+
+.buttonContainer {
+  width: 150px;
+  height: auto;
+  padding: 20px 0px 0px 0px;
+}
+
+.submitBtn {
+  background-color: $borderColor;
+  border: none;
+  border-radius: 0px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+
+  p {
+    font-size: 13.5px;
+    font-weight: 600;
+    margin: 0px;
+  }
+
+  &:hover {
+    background-color: rgba(139, 0, 139, 0.753);
+  }
+
+  &:focus {
+    background-color: rgba(139, 0, 139, 0.753) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    background-color: rgba(139, 0, 139, 0.753) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
+// Overview charts
+.chartContainer {
+  min-height: 400px;
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+  background-color: $backgroundColor;
+}
+
+.chart {
+  width: 100%;
+  height: 380px;
+  background-color: $cardBgColor;
+
+  box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.035);
+}
+
+// Overview DataSets
+.dataSetsContainer {
+  min-height: 400px;
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.dataSetsLeft {
+  width: 50%;
+  min-height: 300px;
+  padding: 0px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    min-width: 300px;
+  }
+}
+
+.dataSetsRight {
+  width: 50%;
+  min-height: 300px;
+  padding: 0px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    min-width: 300px;
+  }
+}
+
+.dataTable {
+  width: 100%;
+  height: auto;
+  background-color: $cardBgColor;
+  margin-bottom: 20px;
+  border-top: 3px solid $borderColor;
+
+  box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.035);
+}
+
+.dataItem {
+  height: 35px;
+  border-bottom: 1px solid rgba(84, 85, 90, 0.1);
+  align-items: center;
+  margin: 0px 13px;
+}
+
+.dataTitle {
+  font-weight: 620;
+  margin: 0px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.dataText {
+  margin: 0px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
