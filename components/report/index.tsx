@@ -97,6 +97,10 @@ export const Overview: React.FC<any> = (): any => {
     e.preventDefault();
   };
 
+  const graphBtnHandler = (e: any) => {
+    e.preventDefault();
+  };
+
   const data = [
     {
       id: "japan",
@@ -201,11 +205,36 @@ export const Overview: React.FC<any> = (): any => {
       </div>
 
       <div className={styled.graphContainer}>
-        <div className={styled.chartContainer}>
-          <div className={styled.chart}>
-            <Graph data={data} />
+        <Form onSubmit={(e) => graphBtnHandler(e)}>
+          <div className={styled.chartContainer}>
+            <div className={styled.graphSelectContainer}>
+              <FormGroup
+                controlId="exampleForm.SelectGraph"
+                className={styled.GraphSelect}
+              >
+                <FormControl
+                  as="select"
+                  defaultValue="Categories"
+                  className={styled.graphFormSelect}
+                >
+                  <option>Impressions</option>
+                  <option>Clicks</option>
+                  <option hidden>Categories</option>
+                </FormControl>
+
+                <div className={styled.graphButtonContainer}>
+                  <Button type="submit" className={styled.graphBtn}>
+                    Submit
+                  </Button>
+                </div>
+              </FormGroup>
+            </div>
+
+            <div className={styled.chart}>
+              <Graph data={data} />
+            </div>
           </div>
-        </div>
+        </Form>
       </div>
 
       <div className={styled.dataSetsContainer}>
