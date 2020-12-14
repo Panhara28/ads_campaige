@@ -179,6 +179,26 @@ $borderColor: rgb(61, 155, 141);
 }
 
 // Overview charts
+.graphContainer {
+  width: 100%;
+  min-height: 400px;
+
+  @media screen and (max-width: 768px) {
+    overflow: scroll;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
 .chartContainer {
   min-height: 400px;
   width: 100%;
@@ -186,7 +206,20 @@ $borderColor: rgb(61, 155, 141);
   background-color: $backgroundColor;
 
   @media screen and (max-width: 768px) {
-    padding: 10px 20px 20px 20px;
+    padding: 10px 10px 20px 10px;
+    width: 788px;
+    overflow: scroll;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
   }
 }
 
@@ -195,6 +228,14 @@ $borderColor: rgb(61, 155, 141);
   height: 380px;
   background-color: $cardBgColor;
   box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.035);
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+  }
+}
+
+.graph {
+  background-color: $cardBgColor;
 }
 
 // Overview DataSets
